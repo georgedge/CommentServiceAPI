@@ -4,14 +4,12 @@
     {
         public int Id { get; set; }
 
-        public int ReportId { get; set; }
+        public Guid CreatedBy { get; set; }
 
-        public Guid UserId { get; set; }
+        public string CommentText { get; set; }
 
-        public string? Title { get; set; }
+        public int ReportId { get; set; }   
 
-        public DateTime Created { get; set; }
-
-        public string? Comment { get; set; }
+        public DateTime DateCreated { get; set; }
     }
 }
